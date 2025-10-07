@@ -1,5 +1,4 @@
 from http.server import HTTPServer, BaseHTTPRequestHandler
-import os
 
 
 class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
