@@ -1,0 +1,124 @@
+/* Боковая панель */
+.sidebar {
+    background-color: #000 !important;
+    color: white;
+    height: 100vh; /* Вся высота экрана */
+    padding: 0;
+    position: fixed;
+    width: 250px;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    overflow-y: auto; /* Если контент не помещается */
+}
+
+.sidebar .nav-link {
+    color: white !important;
+    padding: 15px 20px;
+    border-bottom: 1px solid #333;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #333;
+}
+
+.sidebar .nav-link.active {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+.menu-header {
+    padding: 20px;
+    border-bottom: 1px solid #333;
+    background-color: #111;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    margin: 0;
+}
+
+.user-section {
+    padding: 20px;
+    border-top: 1px solid #333;
+    background-color: #111;
+    margin-top: auto; /* Прижимаем к низу */
+}
+
+.user-section strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Основной контент */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: white;
+}
+
+/* Стили для карточек товаров */
+.pricing-card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.pricing-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.pricing-header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+.thumbnail {
+    height: 200px;
+    background-color: #6c757d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
+
+/* Заголовки секций */
+.hero-section, .catalog-header, .category-header {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-section {
+    padding: 40px 0;
+}
+
+.contact-info {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    height: 100%;
+}
+
+/* Flex контейнер для боковой панели */
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.sidebar-nav {
+    flex: 1;
+}
