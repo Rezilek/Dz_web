@@ -1,5 +1,4 @@
 from http.server import HTTPServer, BaseHTTPRequestHandler
-import os
 
 
 class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
@@ -52,7 +51,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
 
 def run(server_class=HTTPServer, handler_class=SimpleHTTPRequestHandler):
     server_address = ('', 8000)
-    httpd = server_class(server_address, handler_class)
+    httpd = server_class(server_address, handler_class) # type: ignore
     print('Сервер запущен на http://localhost:8000')
     print('Доступные страницы:')
     print('- http://localhost:8000/ (Главная)')
